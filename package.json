@@ -1,7 +1,7 @@
 {
   "name": "alvarado",
   "version": "1.0.0",
-  "description": "",
+  "description": "a simple api",
   "main": "index.js",
   "scripts": {
     "built": "babel src --out-dir build",
