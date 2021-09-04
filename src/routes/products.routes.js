@@ -3,13 +3,13 @@ const router = Router()
 
 import * as productsCtrl from '../contollers/products.controller'
 
-router.get('/', productsCtrl.createProduct)
+router.post('/', productsCtrl.createProduct)
 
 router.get('/', productsCtrl.getProducts)
 
 router.get('/:productId', productsCtrl.getProductById)
 
-router.get('/productId', productsCtrl.updateProductById)
+router.put('/productId', productsCtrl.updateProductById)
 
 router.get('/productId', productsCtrl.deleteProductById)
 
