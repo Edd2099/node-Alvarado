@@ -1,6 +1,16 @@
 import {Router} from 'express'
 const router = Router()
 
-router.get('/', (req,res) => res.json('get products'))
+import * as productsCtrl from '../contollers/products.controller'
+
+router.get('/', productsCtrl.createProduct)
+
+router.get('/', productsCtrl.getProducts)
+
+router.get('/:productId', productsCtrl.getProductById)
+
+router.get('/productId', productsCtrl.updateProductById)
+
+router.get('/productId', productsCtrl.deleteProductById)
 
 export default router;
