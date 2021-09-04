@@ -4,7 +4,7 @@
   "description": "a simple api",
   "main": "index.js",
   "scripts": {
-    "built": "babel src --out-dir build",
+    "build": "babel src --out-dir build",
     "dev": "nodemon src/index.js --exec ./node_modules/.bin/babel-node src/index.js",
     "start": "node build/index.js"
   },
